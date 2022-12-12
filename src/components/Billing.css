@@ -1,0 +1,45 @@
+.billing__Main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+}
+
+.billing__Wrapper1 h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.billing__Wrapper1 p{
+  line-height: 30px;
+  letter-spacing: 1.6px;
+  margin-bottom: 30px;
+}
+
+
+
+.billing__Wrapper1{
+    flex: 1;
+    margin-right: 70px;
+}
+
+.billing__Wrapper2 img{
+    width: 350px;
+    height: 350px;
+}
+
+@media screen and (max-width:700px){
+    .billing__Main{
+        flex-direction: column;
+    }
+
+    .billing__Wrapper1{
+        margin-bottom: 70px;
+    }
+
+    .billing__Wrapper2 img{
+        width: 300px;
+        /* background-color: red; */
+    }
+}

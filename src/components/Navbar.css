@@ -1,0 +1,103 @@
+.header__Main__Navbar nav ul {
+   display: flex;
+}
+
+.header__Main__Navbar nav ul li{
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.header__Main{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    color: white;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.header__Main__Navbar nav ul li a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.header__Main__Navbar nav ul li a:hover{
+    color: grey;
+}
+
+.header__Main__Logo img{
+    height: 80%;
+    width: 80%;
+    padding: 0;
+    margin:0;
+    /* display: none; */
+}
+
+.header__Small__Screen{
+    display: none;
+    transition: 1s ease;
+}
+
+
+.header__Links__Small__Screen__Nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:200;
+    color: white;
+}
+.header__Main{
+    /* background-color: red; */
+    position:  sticky;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    
+}
+.header__Small__Screen p{
+    position: absolute;
+    top: 35px;
+    right: 20px;
+}
+
+.header__Small__Screen nav ul li{
+    list-style: none;
+    margin: 2rem;
+}
+
+.header__Small__Screen nav ul li a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.header__Small__Screen nav ul li a:hover{
+    color: grey;
+}
+
+
+@media  screen and (max-width:700px){
+   .header__Small__Screen{
+       display: block;
+   }
+   .header__Main__Logo{
+       height: 40%;
+       width: 40%;
+   }
+   .header__Main__Navbar{
+       display: none;
+   }
+   .header__Small__Screen P{
+    top: 27px;
+   }
+
+}

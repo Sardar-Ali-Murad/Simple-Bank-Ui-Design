@@ -1,0 +1,83 @@
+.intro__Main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+}
+
+.intro__Section2 img{
+   height: 300px;
+   width: 300px;
+}
+
+.intro__Section1{
+    flex: 1;
+    margin-bottom: 40px;
+    margin-right: 100px;
+}
+
+.intro__Section1__Discount{
+    background-color: grey;
+    border-radius: 2px;
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.intro__Heading{
+    display: flex;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+
+.intro__Heading h1{
+    letter-spacing: 2px;
+    flex: 1;
+}
+
+
+.intro__Heading span{
+    color: pink;   
+}
+
+.intro__Heading__Circle{
+    display: flex;
+    margin-left: 30px;
+    height: 90px;
+    width: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* text-align: cesnter; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro__Heading__Circle p{
+    font-size: 15px;
+}
+
+@media screen and (max-width:900px) {
+    .intro__Main{
+        width: 90%;
+    }
+    .intro__Heading__Circle{
+        display: none;
+    }
+}
+
+@media screen and (max-width:400px){
+    .intro__Heading{
+        flex-direction: column;
+    }
+
+    .intro__Heading__Circle{
+        display: flex;
+        flex-direction: start;
+        margin-top: 30px;
+        margin-left: 4%;
+    }
+
+}

@@ -1,0 +1,124 @@
+.about__Main{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.about__Wrapper1{
+   display: flex;
+   margin-top: 60px;
+   margin-bottom: 60px;
+   /* flex-wrap: wrap; */
+}
+
+.about__Wrapper1 h1{
+    font-size: 27px;
+    flex: 1;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.about__Wrapper1 p{
+    margin-bottom: 20px;
+}
+
+
+.about__Wrapper2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1.2rem;
+}
+
+ .wrapper2__sections{
+    background-color: rgb(29, 27, 27);
+    padding: 70px 10px;
+    /* border: 9px solid lightblue; */
+    border-radius: 10px;
+}
+
+.wrapper2__Sections__Peoples{
+    display: flex;
+    margin-top: 29px;
+    gap: 1rem;
+}
+
+
+.about__Wrapper2{
+    margin-bottom: 40px;
+}
+
+
+.about__Wrapper3{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.about__Wrapper3 img{
+    margin-top: 30px;
+}
+
+.about__Wrapper4{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    background: rgb(37, 34, 34);
+    height: 200px;
+    border-radius: 10px;
+}
+
+.about__Wrapper4 .text {
+    margin-top: 30px;
+    margin-left: 2%;
+}
+
+.about__Wrapper4 .text h1{
+    font-size: 30px;
+    margin-bottom: 26px;
+}
+
+
+.about__Wrapper4 .text{
+    flex: 1;
+}
+
+.about__Wrapper4 button{
+    margin-top: 70px;
+    /* margin-left: 3%; */
+    margin-right: 3%;
+}
+
+.about__Wrapper4 .text p{
+    float: 1;
+    width: 40%;
+}
+
+
+
+
+@media screen and (max-width:700px){
+    .about__Wrapper4{
+        height: 230px;
+    }
+    .about__Wrapper4 .text p{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .about__Wrapper4{
+        height: 270px;
+    }
+    .about__Wrapper4 .text p{
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (max-width:1200px){
+    .about__Wrapper1{
+        flex-direction: column;
+    }
+}

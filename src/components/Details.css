@@ -1,0 +1,38 @@
+.details__Main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.details__Main p{
+    margin-top: 30px;
+}
+
+.details__Main__Flex{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+
+.details__Main__Flex p{
+    /* margin-right: 10px; */
+}
+
+.details__Main__Info{
+  margin-left: 30px;
+  margin-top: 100px;
+  text-align: center;
+  color: lightcoral;
+}
+
+.details__Main__Flex .line{
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 2px;
+    background-color: rgb(88, 36, 36);
+}
